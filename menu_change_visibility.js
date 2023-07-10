@@ -11,7 +11,7 @@ function handleSelectChange() {
 
     if (select.value === 'ROUTER') {
          input1.classList.remove('hidden');
-    } else (select.value === 'BRIDGE') {
+    } else if  (select.value === 'BRIDGE') {
         input2.classList.remove('hidden');
     } 
 }
