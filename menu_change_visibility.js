@@ -12,7 +12,7 @@ function handleSelectChange() {
         input1.style.display = 'none';
         input2.style.display = 'block';
     } else {
-        input1.style.display = 'block;
+        input1.style.display = 'block';
         input2.style.display = 'block';
     }
 }
