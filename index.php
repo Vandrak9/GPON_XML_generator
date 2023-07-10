@@ -24,5 +24,32 @@
             <button type="submit">Odoslať</button>
         </form>
     </div>
+
+    <script>
+        // Zachytiť udalosť zmeny hodnoty na poliach
+        var nameInput = document.getElementById('name');
+        var emailInput = document.getElementById('email');
+        var messageInput = document.getElementById('message');
+
+        nameInput.addEventListener('input', handleInputChange);
+        emailInput.addEventListener('input', handleInputChange);
+        messageInput.addEventListener('input', handleInputChange);
+
+        // Spracovať hodnoty
+        function handleInputChange(event) {
+            var nameValue = nameInput.value;
+            var emailValue = emailInput.value;
+            var messageValue = messageInput.value;
+
+            // Tu môžete spracovať hodnoty z polí formulára
+            // Napríklad môžete ich použiť na validáciu, dynamické zobrazenie alebo odoslanie asynchrónnych požiadaviek
+            console.log('Meno:', nameValue);
+            console.log('Email:', emailValue);
+            console.log('Správa:', messageValue);
+        }
+    </script>
+
+
+
 </body>
 </html>
