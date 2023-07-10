@@ -18,14 +18,14 @@
                 <input type="text" name="numberofcontract" id="numberofcontract" required>
             </div>
 
-            
+
             <div class="form-group">
                 <label for="numberofcontract">Sériové číslo ONU:</label>
                 <input type="text" name="numberofcontract" id="numberofcontract" required>
             </div>
             <div class="form-group">
                 <label for="OLT">Položka:</label>
-                <select name="OLT[]" id="OLT" multiple>
+                <select name="OLT[]" id="OLT">
                     <option value="OLT NOD8">Položka 3</option>
                     <option value="OLT Kalnica">Položka 4</option>
                 </select>
