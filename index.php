@@ -33,6 +33,7 @@
             <div class="form-group">
                 <label for="ONU_mode">Mód ONU:</label>
                 <select name="ONU_mode[]" id="ONU_mode">
+                    <option value="">-- Vyberte --</option>
                     <option value="ROUTER">Privátna IP router</option>
                     <option value="BRIDGE">Verejná IP bridge</option>          
                 </select>
