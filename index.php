@@ -17,17 +17,26 @@
                 <label for="numberofcontract">Číslo zmluvy:</label>
                 <input type="text" name="numberofcontract" id="numberofcontract" required>
             </div>
-
-
             <div class="form-group">
                 <label for="numberofcontract">Sériové číslo ONU:</label>
                 <input type="text" name="numberofcontract" id="numberofcontract" required>
             </div>
             <div class="form-group">
-                <label for="OLT">Položka:</label>
+                <label for="OLT">OLT:</label>
                 <select name="OLT[]" id="OLT">
-                    <option value="OLT NOD8">Položka 3</option>
-                    <option value="OLT Kalnica">Položka 4</option>
+                    <option value="DASAN_H665">DASAN H665</option>
+                    <option value="DASAN_H665C">DASAN H665C</option>
+                    <option value="HALNY_HL-1GE">HALNY HL-1GE</option>
+                    <option value="HALNY_HL-4GMV">HALNY HL-4GMV</option>                    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ONU">Model ONU:</label>
+                <select name="ONU[]" id="ONU">
+                    <option value="DASAN_H665">DASAN H665</option>
+                    <option value="DASAN_H665C">DASAN H665C</option>
+                    <option value="HALNY_HL-1GE">HALNY HL-1GE</option>
+                    <option value="HALNY_HL-4GMV">HALNY HL-4GMV</option>                    
                 </select>
             </div>
 
@@ -39,30 +48,7 @@
         </form>
     </div>
 
-    <script>
-        // Zachytiť udalosť zmeny hodnoty na poliach
-        var nameInput = document.getElementById('name');
-        var emailInput = document.getElementById('email');
-        var messageInput = document.getElementById('message');
-
-        nameInput.addEventListener('input', handleInputChange);
-        emailInput.addEventListener('input', handleInputChange);
-        messageInput.addEventListener('input', handleInputChange);
-
-        // Spracovať hodnoty
-        function handleInputChange(event) {
-            var nameValue = nameInput.value;
-            var emailValue = emailInput.value;
-            var messageValue = messageInput.value;
-
-            // Tu môžete spracovať hodnoty z polí formulára
-            // Napríklad môžete ich použiť na validáciu, dynamické zobrazenie alebo odoslanie asynchrónnych požiadaviek
-            console.log('Meno:', nameValue);
-            console.log('Email:', emailValue);
-            console.log('Správa:', messageValue);
-        }
-    </script>
-
+    <script src="menu_change_visibility.js"></script>
 
 
 </body>
