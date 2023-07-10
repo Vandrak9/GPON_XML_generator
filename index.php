@@ -2,21 +2,35 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Moderný PHP formulár</title>
+    <title>XML Generator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h2>Kontaktný formulár</h2>
+        <h2>GPON XML Generator</h2>
         <form method="post" action="odoslat.php">
             <div class="form-group">
-                <label for="name">Meno:</label>
+                <label for="name">Meno a priezvisko:</label>
                 <input type="text" name="name" id="name" required>
             </div>
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+                <label for="numberofcontract">Číslo zmluvy:</label>
+                <input type="text" name="numberofcontract" id="numberofcontract" required>
             </div>
+
+            
+            <div class="form-group">
+                <label for="numberofcontract">Sériové číslo ONU:</label>
+                <input type="text" name="numberofcontract" id="numberofcontract" required>
+            </div>
+            <div class="form-group">
+                <label for="OLT">Položka:</label>
+                <select name="OLT[]" id="OLT" multiple>
+                    <option value="OLT NOD8">Položka 3</option>
+                    <option value="OLT Kalnica">Položka 4</option>
+                </select>
+            </div>
+
             <div class="form-group">
                 <label for="message">Správa:</label>
                 <textarea name="message" id="message" required></textarea>
