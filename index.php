@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<script src="menu_change_visibility.js"></script>
+
+
     <div class="container">
         <h2>GPON XML Generator</h2>
         <form method="post" action="odoslat.php">
@@ -67,7 +70,7 @@
         </form>
     </div>
 
-    <script src="menu_change_visibility.js"></script>
+    
 
 
 </body>
