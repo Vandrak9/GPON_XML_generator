@@ -6,12 +6,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<script src="menu_change_visibility.js"></script>
-
-
     <div class="container">
         <h2>GPON XML Generator</h2>
-        <form method="post" action="odoslat.php">
+        <form method="post" action="progres.php">
             <div class="form-group">
                 <label for="name">Meno a priezvisko:</label>
                 <input type="text" name="name" id="name" required>
