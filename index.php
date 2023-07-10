@@ -44,7 +44,7 @@
 
             <div class="form-group">
                 <label for="ONU_ROUTER">Model ONU:</label>
-                <select name="ONU_ROUTER[]" id="ONU_ROUTER">
+                <select name="ONU_ROUTER[]" id="ONU_ROUTER" class="hidden">
                     <option value="DASAN_H665">DASAN H665</option>
                     <option value="DASAN_H665C">DASAN H665C</option>
                     <option value="HALNY_HL-1GE">HALNY HL-1GE</option>
@@ -54,7 +54,7 @@
 
             <div class="form-group">
                 <label for="ONU_BRIDGE">Model ONU:</label>
-                <select name="ONU_BRIDGE[]" id="ONU_BRIDGE">
+                <select name="ONU_BRIDGE[]" id="ONU_BRIDGE" class="hidden">
                     <option value="DASAN_H665">DASAN H665</option>
                     <option value="DASAN_H665C">DASAN H665C</option>
                     <option value="HALNY_HL-1GE">HALNY HL-1GE</option>
