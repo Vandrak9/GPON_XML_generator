@@ -31,8 +31,26 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="ONU">Model ONU:</label>
-                <select name="ONU[]" id="ONU">
+                <label for="ONU_mode">Mód ONU:</label>
+                <select name="ONU_mode[]" id="ONU_mode">
+                    <option value="ROUTER">Privátna IP router</option>
+                    <option value="BRIDGE">Verejná IP bridge</option>          
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ONU_ROUTER">Model ONU:</label>
+                <select name="ONU_ROUTER[]" id="ONU_ROUTER">
+                    <option value="DASAN_H665">DASAN H665</option>
+                    <option value="DASAN_H665C">DASAN H665C</option>
+                    <option value="HALNY_HL-1GE">HALNY HL-1GE</option>
+                    <option value="HALNY_HL-4GMV">HALNY HL-4GMV</option>                    
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ONU_BRIDGE">Model ONU:</label>
+                <select name="ONU_BRIDGE[]" id="ONU_BRIDGE">
                     <option value="DASAN_H665">DASAN H665</option>
                     <option value="DASAN_H665C">DASAN H665C</option>
                     <option value="HALNY_HL-1GE">HALNY HL-1GE</option>
