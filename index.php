@@ -42,6 +42,8 @@
                 </select>
             </div>
 
+<script src="menu_change_visibility.js"></script>
+
             <div class="form-group">
                 <label for="ONU_ROUTER">Model ONU:</label>
                 <select name="ONU_ROUTER[]" id="ONU_ROUTER">
