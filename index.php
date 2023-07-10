@@ -22,6 +22,8 @@
       </div>
     </div> 
 
+    
+
     <div class="row">
       <div class="col-25">
       <label for="ip">IP adresa:</label><br>
