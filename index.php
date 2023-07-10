@@ -33,6 +33,7 @@
                     <option value="HALNY_HL-4GMV">HALNY HL-4GMV</option>                    
                 </select>
             </div>
+            
             <div class="form-group">
                 <label for="ONU_mode">Mód ONU:</label>
                 <select name="ONU_mode[]" id="ONU_mode">
@@ -43,22 +44,23 @@
             </div>
 
             <div class="form-group">
-                <label for="ONU_ROUTER" id="label_select_router"class="hidden">Model ONU:</label>
+                <label for="ONU_ROUTER" id="label_select_router"class="hidden">Model ONU v móde ROUTER:</label>
                 <select name="ONU_ROUTER[]" id="ONU_ROUTER" class="hidden">
-                    <option value="DASAN_H665">DASAN H665</option>
-                    <option value="DASAN_H665C">DASAN H665C</option>
-                    <option value="HALNY_HL-1GE">HALNY HL-1GE</option>
-                    <option value="HALNY_HL-4GMV">HALNY HL-4GMV</option>                    
+                    <option value="DASAN_H665_ROUTER">DASAN H665</option>
+                    <option value="DASAN_H665C_ROUTER">DASAN H665C</option>
+                    <option value="DASAN_H660GM_ROUTER">DASAN H665C</option>
+                    <option value="HALNY_HL-1GE_ROUTER">HALNY HL-1GE</option>
+                    <option value="HALNY_HL-4GMV_ROUTER">HALNY HL-4GMV</option>                    
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="ONU_BRIDGE" id="label_select_bridge" class="hidden">Model ONU:</label>
+                <label for="ONU_BRIDGE" id="label_select_bridge" class="hidden">Model ONU v móde BRIDGE:</label>
                 <select name="ONU_BRIDGE[]" id="ONU_BRIDGE" class="hidden">
-                    <option value="DASAN_H665">DASAN H665</option>
-                    <option value="DASAN_H665C">DASAN H665C</option>
-                    <option value="HALNY_HL-1GE">HALNY HL-1GE</option>
-                    <option value="HALNY_HL-4GMV">HALNY HL-4GMV</option>                    
+                    <option value="DASAN_H665_BRIDGE">DASAN H665</option>
+                    <option value="DASAN_H665C_BRIDGE">DASAN H665C</option>
+                    <option value="HALNY_HL-1GE_BRIDGE">HALNY HL-1GE</option> 
+                    <option value="HALNY_HL-GSFP_BRIDGE">HALNY HL-GSFP</option>             
                 </select>
             </div>
 
