@@ -22,14 +22,30 @@
             </div>
 
             <div class="form-group">
-                <label for="numberofcontract">Sériové číslo ONU:</label>
-                <input type="text" name="numberofcontract" id="numberofcontract" required>
+                <label for="serialONU">Sériové číslo ONU:</label>
+                <input type="text" name="serialONU" id="serialONU" required>
             </div>
 
             <div class="form-group">
-                <label for="numberofcontract">MAC adresa:</label>
-                <input type="text" name="mac_address" id="mac_address" required>
+                <label for="macAddress">MAC adresa:</label>
+                <input type="text" name="macAddress" id="macAddress" required>
+                <span id="macError" class="error"></span>
             </div>
+
+            <script>
+        var macAddressInput = document.getElementById('macAddress');
+        var macErrorSpan = document.getElementById('macError');
+        var macRegex = /^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$/;
+
+        macAddressInput.addEventListener('input', function() {
+            var macAddress = macAddressInput.value;
+            if (macRegex.test(macAddress)) {
+                macErrorSpan.textContent = '';
+            } else {
+                macErrorSpan.textContent = 'Neplatná MAC adresa';
+            }
+        });
+    </script>
 
             <div class="form-group">
                 <label for="OLT">OLT:</label>
