@@ -31,7 +31,7 @@
 
             <div class="form-group">
                 <label for="OLT">OLT:</label>
-                <select name="OLT[]" id="OLT">
+                <select name="OLT" id="OLT">
                     <option value="">-- Vyberte --</option>
                     <option value="OLT_NOD8">OLT NOD8</option>
                     <option value="OLT_Kalnica">OLT Kálnica</option>                
