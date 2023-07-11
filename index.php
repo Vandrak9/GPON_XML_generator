@@ -27,7 +27,6 @@
             <div class="form-group">
                 <label for="macAddress">MAC adresa:</label>
                 <input type="text" name="macAddress" id="macAddress" required>
-                <span id="macError" class="error"></span>
             </div>
 
             <div class="form-group">
