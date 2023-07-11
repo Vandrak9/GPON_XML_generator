@@ -69,11 +69,6 @@
                     <option value="HALNY_HL-GSFP_BRIDGE">HALNY HL-GSFP</option>             
                 </select>
             </div>
-
-            <div class="form-group">
-                <label for="message">Správa:</label>
-                <textarea name="message" id="message" required></textarea>
-            </div>
             <button type="submit">Odoslať</button>
         </form>
     </div>
