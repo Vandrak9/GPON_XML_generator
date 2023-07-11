@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
              // Presmerovanie na index.php
             header('Location: index.php');
     exit(); // Ukončenie vykonávania skriptu
-    
+} 
 
 
     // Tu môžete spracovať hodnoty premenných $name a $email
