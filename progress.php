@@ -1,4 +1,6 @@
 <?php
+include 'functions.php';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
     $numberofcontract = $_POST['numberofcontract'];
@@ -10,7 +12,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ONU_BRIDGE = $_POST['ONU_BRIDGE'];
     
 
-
+    if (validateMacAddress($macAddress)) {
+        echo 'Platná MAC adresa';
+    } else {
+        echo 'Neplatná MAC adresa';
+    }
 
 
 
