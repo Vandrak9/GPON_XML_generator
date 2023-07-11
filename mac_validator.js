@@ -9,5 +9,6 @@ document.getElementById('New_ONU').addEventListener('submit', function(event) {
         event.preventDefault();
     } else {
         macErrorSpan.textContent = '';
+        window.location.href = 'progress.php';
     }
 });
