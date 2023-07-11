@@ -12,11 +12,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ONU_BRIDGE = $_POST['ONU_BRIDGE'];
     
 
-    if (!validateMacAddress($macAddress)) {
-        // Presmerovanie na index.php
-        header('Location: index.php');
-        exit(); // Ukončenie vykonávania skriptu
-    }
+    if (validateMacAddress($macAddress)) {
+        echo 'Platná MAC adresa';
+    } else {
+            echo 'Neplatná MAC adresa';
+             // Presmerovanie na index.php
+            header('Location: index.php');
+    exit(); // Ukončenie vykonávania skriptu
     
 
 
