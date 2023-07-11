@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <h2>GPON XML Generator</h2>
-        <form id="New_ONU">
+        
         <form action="progress.php" method="POST">
             <div class="form-group">
                 <label for="name">Meno a priezvisko:</label>
