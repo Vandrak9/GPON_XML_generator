@@ -1,3 +1,4 @@
+<?php
 function validateMacAddress($macAddress) {
     // Odstránenie medzier a pomlčiek z MAC adresy
     $macAddress = str_replace([' ', '-'], '', $macAddress);
@@ -14,3 +15,5 @@ function validateMacAddress($macAddress) {
     
     return true;
 }
+
+?>
