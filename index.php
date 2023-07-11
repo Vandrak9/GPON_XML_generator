@@ -40,7 +40,7 @@
 
             <div class="form-group">
                 <label for="ONU_mode">Mód ONU:</label>
-                <select name="ONU_mode[]" id="ONU_mode">
+                <select name="ONU_mode" id="ONU_mode">
                     <option value="">-- Vyberte --</option>
                     <option value="ROUTER">Privátna IP router</option>
                     <option value="BRIDGE">Verejná IP bridge</option>          
@@ -49,7 +49,7 @@
 
             <div class="form-group">
                 <label for="ONU_ROUTER" id="label_select_router"class="hidden">Model ONU v móde ROUTER:</label>
-                <select name="ONU_ROUTER[]" id="ONU_ROUTER" class="hidden">
+                <select name="ONU_ROUTER" id="ONU_ROUTER" class="hidden">
                     <option value="">-- Vyberte --</option>
                     <option value="DASAN_H665_ROUTER">DASAN H665</option>
                     <option value="DASAN_H665C_ROUTER">DASAN H665C</option>
@@ -61,7 +61,7 @@
 
             <div class="form-group">
                 <label for="ONU_BRIDGE" id="label_select_bridge" class="hidden">Model ONU v móde BRIDGE:</label>
-                <select name="ONU_BRIDGE[]" id="ONU_BRIDGE" class="hidden">
+                <select name="ONU_BRIDGE" id="ONU_BRIDGE" class="hidden">
                     <option value="">-- Vyberte --</option>
                     <option value="DASAN_H665_BRIDGE">DASAN H665</option>
                     <option value="DASAN_H665C_BRIDGE">DASAN H665C</option>
