@@ -30,21 +30,6 @@
                 <span id="macError" class="error"></span>
             </div>
 
-            <script>
-        var macAddressInput = document.getElementById('macAddress');
-        var macErrorSpan = document.getElementById('macError');
-        var macRegex = /^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$/;
-
-        macAddressInput.addEventListener('input', function() {
-            var macAddress = macAddressInput.value;
-            if (macRegex.test(macAddress)) {
-                macErrorSpan.textContent = '';
-            } else {
-                macErrorSpan.textContent = 'Neplatná MAC adresa';
-            }
-        });
-    </script>
-
             <div class="form-group">
                 <label for="OLT">OLT:</label>
                 <select name="OLT[]" id="OLT">
