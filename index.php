@@ -78,8 +78,6 @@
         </form>
     </div>
 
-    
-    <script src="mac_validator.js"></script>
     <script src="menu_change_visibility.js"></script>
 </body>
 </html>
