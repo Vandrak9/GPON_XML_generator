@@ -1,4 +1,4 @@
-document.getElementById('myForm').addEventListener('submit', function(event) {
+document.getElementById('New_ONU').addEventListener('submit', function(event) {
     var macAddressInput = document.getElementById('macAddress');
     var macErrorSpan = document.getElementById('macError');
     var macAddress = macAddressInput.value.trim();
