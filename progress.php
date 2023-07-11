@@ -12,12 +12,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ONU_BRIDGE = $_POST['ONU_BRIDGE'];
     
 
-    if (validateMacAddress($macAddress)) {
-        echo 'Platná MAC adresa';
-    } else {
-        echo 'Neplatná MAC adresa';
+    if (!validateMacAddress($macAddress)) {
+        // Presmerovanie na index.php
+        header('Location: index.php');
+        exit(); // Ukončenie vykonávania skriptu
     }
-
+    
 
 
     // Tu môžete spracovať hodnoty premenných $name a $email
