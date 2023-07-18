@@ -1,20 +1,23 @@
 <?php
 
-function validateMacAddress($macAddress) {
-    // Odstránenie medzier a pomlčiek z MAC adresy
-    $macAddress = str_replace([' ', '-'], '', $macAddress);
+class MacAddressValidator {
+    private $macAddress;
     
-    // Kontrola dĺžky MAC adresy
-    if (strlen($macAddress) !== 12) {
-        return false;
+    public function __construct($macAddress) {
+        $this->macAddress = $macAddress;
     }
     
-    // Kontrola platnosti MAC adresy
-    if (!preg_match('/^([0-9A-Fa-f]{2}){6}$/', $macAddress)) {
-        return false;
+    public function validate() {
+        $macAddress = str_replace([' ', '-'], '', $this->macAddress);
+        
+        if (strlen($macAddress) !== 12) {
+            return false;
+        }
+        
+        if (!preg_match('/^([0-9A-Fa-f]{2}){6}$/', $macAddress)) {
+            return false;
+        }
+        
+        return true;
     }
-    
-    return true;
 }
-
-?>
