@@ -1,6 +1,32 @@
 <?php
 include 'functions.php';
 
+
+
+
+
+class MacAddressValidator {
+    private $macAddress;
+    
+    public function __construct($macAddress) {
+        $this->macAddress = $macAddress;
+    }
+    
+    public function validate() {
+        $macAddress = str_replace([' ', '-'], '', $this->macAddress);
+        
+        if (strlen($macAddress) !== 12) {
+            return false;
+        }
+        
+        if (!preg_match('/^([0-9A-Fa-f]{2}){6}$/', $macAddress)) {
+            return false;
+        }
+        
+        return true;
+    }
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
     $numberofcontract = $_POST['numberofcontract'];
@@ -10,16 +36,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ONU_mode = $_POST['ONU_mode'];
     $ONU_ROUTER = $_POST['ONU_ROUTER'];
     $ONU_BRIDGE = $_POST['ONU_BRIDGE'];
+
+
+
+    
+    $validator = new MacAddressValidator($macAddress);
+if ($validator->validate()) {
+    echo 'MAC adresa je platná.';
+} else {
+    echo 'MAC adresa je neplatná.';
+}
     
 
-    if (validateMacAddress($macAddress)) {
-        echo 'Platná MAC adresa';
-    } else {
-            echo 'Neplatná MAC adresa';
-             // Presmerovanie na index.php
-            header('Location: index.php');
-    exit(); // Ukončenie vykonávania skriptu
-} 
+
 
 
     // Tu môžete spracovať hodnoty premenných $name a $email
