@@ -9,6 +9,8 @@ class MacAddressValidator {
     
     public function validate() {
         $macAddress = str_replace([' ', '-'], '', $this->macAddress);
+         // Odstránenie dvojbodiek zo vstupu
+         $macAddress = str_replace(':', '', $macAddress);
         
         if (strlen($macAddress) !== 12) {
             return false;
