@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ONU_ROUTER = $_POST['ONU_ROUTER'];
     $ONU_BRIDGE = $_POST['ONU_BRIDGE'];
 
-
+    echo 'MAC adresa: ' . $macAddress . '<br>';
 
     
     $validator = new MacAddressValidator($macAddress);
